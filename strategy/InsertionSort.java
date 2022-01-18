@@ -6,7 +6,10 @@ import java.util.ArrayList;
  * @author Erik Connerty
  */
 
-
+/**
+ * Returns a sorted array using insertion sort
+ * @return Sorted ArrayList<String>
+ */
 public class InsertionSort implements SortBehavior{
 
     public ArrayList<String> sort(ArrayList<String> data){
