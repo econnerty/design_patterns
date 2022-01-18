@@ -1,7 +1,6 @@
 package strategy;
 import java.util.ArrayList;
 
-
 /**
  * Creates lists of information, and displays the sorted versions of the lists
  */

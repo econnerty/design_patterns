@@ -1,6 +1,15 @@
 package strategy;
 import java.util.ArrayList;
 
+/**
+ * Bubble sort implementation
+ * @author Erik Connerty
+ */
+
+ /**
+ * Returns a sorted array using bubble sort
+ * @return Sorted ArrayList<String>
+ */
 public class BubbleSort implements SortBehavior {
 
     public ArrayList<String> sort(ArrayList<String> data){ 

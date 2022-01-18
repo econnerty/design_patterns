@@ -1,6 +1,12 @@
 package strategy;
 import java.util.ArrayList;
 
+/**
+ * Insertion sort implementation
+ * @author Erik Connerty
+ */
+
+
 public class InsertionSort implements SortBehavior{
 
     public ArrayList<String> sort(ArrayList<String> data){
