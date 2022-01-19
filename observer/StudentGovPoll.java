@@ -27,7 +27,9 @@ public class StudentGovPoll implements Subject {
     }
 
     public void notifyObservers(){
-        numUpdates++;
+        for (Observer observer : observers) {
+            observer.update(votes);
+        }
     }
 
     public void addCandidate(String president) {
@@ -36,6 +38,9 @@ public class StudentGovPoll implements Subject {
 
     public void enterVotes(String president, int num) {
         votes.put(president,(votes.get(president) + num));
+        numUpdates++;
+        if (numUpdates % 4 == 0)
+            notifyObservers();
     }
 
     public String getSchool() {
