@@ -12,7 +12,7 @@ public class PercentageDisplay implements Observer {
     private Subject poll;
     private HashMap<String, Integer> votes; //Is this really necessary? We already pass this to update from our Poll class
 
-       /**
+    /**
      * Constructor for percentage display takes in a poll and registers this instance of observer to the poll
      * @param A subject
      */
