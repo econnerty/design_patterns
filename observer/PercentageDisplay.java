@@ -22,11 +22,20 @@ public class PercentageDisplay implements Observer {
     }
 
     /**
+     * Sets the hashmap and calls to display to print to the screen
+     * @param The hashmap of presidents and votes
+     */
+    public void update(HashMap<String, Integer> votes){
+        this.votes = votes;
+        display();
+    }
+
+    /**
      * Prints the HashMap to the screen as percentage for each president
      * @param The hashmap to be outputted
      */
-    public void update(HashMap<String, Integer> votes){
-        
+    private void display() {
+
         //we use a float here so java will automatically keep the output as a float later
         float total = 0;
 

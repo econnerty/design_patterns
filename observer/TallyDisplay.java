@@ -21,10 +21,19 @@ public class TallyDisplay implements Observer {
     }
 
     /**
+     * Sets the hashmap and calls to display to print to the screen
+     * @param The hashmap of presidents and votes
+     */
+    public void update(HashMap<String, Integer> votes){
+        this.votes = votes;
+        display();
+    }
+
+    /**
      * Prints the HashMap to the screen as a tally for each president
      * @param The hashmap to be outputted
      */
-    public void update(HashMap<String, Integer> votes){
+    private void display() {
 
         System.out.println("Current Tallies:");
         for (String president : votes.keySet()){
