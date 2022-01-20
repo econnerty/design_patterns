@@ -10,7 +10,7 @@ import java.util.HashMap;
 public class PercentageDisplay implements Observer {
 
     private Subject poll;
-    private HashMap<String, Integer> votes; //Is this really necessary?
+    private HashMap<String, Integer> votes; //Is this really necessary? We already pass this to update from our Poll class
 
     public PercentageDisplay(Subject poll){
         this.poll = poll;
@@ -18,6 +18,17 @@ public class PercentageDisplay implements Observer {
     }
 
     public void update(HashMap<String, Integer> votes){
+        
+        float total = 0;
+
+        System.out.println("Current Percent of Votes:");
+        for (String president : votes.keySet()){
+            total += votes.get(president);
+        }
+
+        for (String president : votes.keySet()){
+            System.out.println(president + ": " + String.format("%.2f", (votes.get(president)/total)*100) + "%");
+        }
 
     }
     
