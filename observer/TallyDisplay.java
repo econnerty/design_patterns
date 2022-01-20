@@ -9,7 +9,7 @@ import java.util.HashMap;
 public class TallyDisplay implements Observer {
 
     private Subject poll;
-    private HashMap<String, Integer> votes; //Is this really necessary? We already pass this to update from our Poll class
+    private HashMap<String, Integer> votes;
 
     /**
      * Constructor for tally display takes in a poll and registers this instance of observer to the poll
