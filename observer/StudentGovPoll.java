@@ -9,6 +9,8 @@ import java.util.HashMap;
 
 public class StudentGovPoll implements Subject {
 
+    private static final int UPDATES_BEFORE_NOTIFY = 4; //I added this to avoid using a magic number in enterVotes
+
     private ArrayList<Observer> observers = new ArrayList<Observer>();
     private HashMap<String, Integer> votes = new HashMap<String, Integer>();
     private String school;
@@ -52,7 +54,7 @@ public class StudentGovPoll implements Subject {
      * @param The president's name
      */
     public void addCandidate(String president) {
-        votes.put(president, 0);
+        votes.put(president, 0); //we start with zero votes
     }
 
     /**
@@ -63,7 +65,7 @@ public class StudentGovPoll implements Subject {
     public void enterVotes(String president, int num) {
         votes.put(president,(votes.get(president) + num));
         numUpdates++;
-        if (numUpdates % 4 == 0)
+        if (numUpdates % UPDATES_BEFORE_NOTIFY == 0)
             notifyObservers();
     }
 
