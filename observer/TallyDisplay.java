@@ -35,7 +35,7 @@ public class TallyDisplay implements Observer {
      */
     private void display() {
 
-        System.out.println("Current Tallies:");
+        System.out.println("\nCurrent Tallies:");
         for (String president : votes.keySet()){
             System.out.println(president + ": " + votes.get(president));
         }

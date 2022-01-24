@@ -38,7 +38,7 @@ public class PercentageDisplay implements Observer {
         //we use a float here so java will automatically keep the output as a float later
         float total = 0;
 
-        System.out.println("Current Percent of Votes:");
+        System.out.println("\nCurrent Percent of Votes:");
         for (String president : votes.keySet())
             total += votes.get(president);
 
