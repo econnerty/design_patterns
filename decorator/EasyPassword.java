@@ -13,8 +13,7 @@ public class EasyPassword extends Password {
     public String getPassword() {
         
         Random r = new Random();
-        this.password = this.password+r.nextInt(MAX_RANDOM_NUMBER+1);
-        return this.password.replaceAll("\\s", "");      
-    }
+        this.password = (this.password+r.nextInt(MAX_RANDOM_NUMBER+1)).replaceAll("\\s", "");
+        return this.password;
 
 }
