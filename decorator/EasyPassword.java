@@ -21,6 +21,10 @@ public class EasyPassword extends Password {
         super(phrase);
     }
 
+    /**
+     * Adds a random number from 1-99 to the end of the password
+     * @return The modified password
+     */
     public String getPassword() {
         Random r = new Random();
         
