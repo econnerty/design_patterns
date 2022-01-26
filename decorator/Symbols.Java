@@ -4,7 +4,7 @@ import java.util.Map;
 
 public class Symbols extends PasswordDecorator{
     
-       /**
+    /**
      * Constructs a Symbols Decorator with the previous password
      * @param The previous password
      */
