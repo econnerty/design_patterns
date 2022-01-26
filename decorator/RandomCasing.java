@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class RandomCasing extends PasswordDecorator{
 
-    //Setting this to will allow us to have a 50% of a upper or lowercase letter because Random will return a 0 or 1. If it were changed to 3 there would be a 33% chance, and 4 would be 25% chance etc.
+    //Setting this to 2 will allow us to have a 50% of a upper or lowercase letter because Random will return a 0 or 1. If it were changed to 3 there would be a 33% chance, and 4 would be 25% chance etc.
     private static final int MAX_RANDOM_INT = 2;
 
     /**
