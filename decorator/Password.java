@@ -1,5 +1,6 @@
 package decorator;
 
+
 public abstract class Password {
     protected String password;
 
