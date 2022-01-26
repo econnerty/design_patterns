@@ -13,18 +13,14 @@ public class EasyPassword extends Password {
      */
     public EasyPassword(String phrase){
         super(phrase);
-        makePass();
+
     }
 
     public String getPassword() {
-        
-        return this.password;
-    }
-
-    private void makePass(){
         Random r = new Random();
         
-        this.password = (password+r.nextInt(MAX_RANDOM_NUMBER+1)).replaceAll("\\s", "");
+        this.password = (this.password+r.nextInt(MAX_RANDOM_NUMBER+1)).replaceAll("\\s", "");
+        return this.password;
     }
 
 }

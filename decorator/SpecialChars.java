@@ -11,16 +11,9 @@ public class SpecialChars extends PasswordDecorator{
 
     public SpecialChars(Password passwordBeginning){
         super(passwordBeginning);
-        makePass();
     }
     
     public String getPassword(){
-        return this.password;
-
-    }
-
-    private void makePass(){
-
         Random r = new Random();
         String out = "";
 
@@ -37,6 +30,10 @@ public class SpecialChars extends PasswordDecorator{
         }
 
         this.password = out;
+        return this.password;
 
     }
+
+   
+    
 }

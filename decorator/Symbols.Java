@@ -6,18 +6,10 @@ public class Symbols extends PasswordDecorator{
     
     public Symbols(Password passwordBeginning){
         super(passwordBeginning);
-        makePass();
     }
 
     public String getPassword(){
-        return this.password;
-    }
-
-    private void makePass(){
-
         String out = "";
-
-        System.out.println("Symbols: " + this.password);
 
         for (char a : this.password.toCharArray()){
             switch (a) {
@@ -52,6 +44,7 @@ public class Symbols extends PasswordDecorator{
         }
 
         this.password = out;
-
+        return this.password;
     }
+
 }

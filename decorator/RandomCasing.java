@@ -10,14 +10,9 @@ public class RandomCasing extends PasswordDecorator{
     public RandomCasing(Password passwordBeginning){
 
         super(passwordBeginning);
-        makePass();
     }
 
     public String getPassword(){
-        return this.password;
-    }
-
-    private void makePass(){
         Random r = new Random();
 
         String out = "";
@@ -29,6 +24,8 @@ public class RandomCasing extends PasswordDecorator{
                 out += Character.toLowerCase(a);
         }
         this.password = out;
+        return this.password;
     }
+
     
 }
