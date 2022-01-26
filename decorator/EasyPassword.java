@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class EasyPassword extends Password {
 
+    //Constants for random number generator
     private static final int MAX_RANDOM_NUMBER = 99;
     private static final int MIN_NUMBER = 1;
     
