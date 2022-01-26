@@ -2,6 +2,11 @@ package decorator;
 
 import java.util.Random;
 
+/**
+ * SpecialChars class. Will insert random special chars 30% of the time after each char in a String
+ * @author Erik Connerty
+ */
+
 public class SpecialChars extends PasswordDecorator{
 
     //Setting these variables will allow us to check 3/10 times for a 30% rate without using magic numbers

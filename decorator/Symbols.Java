@@ -1,7 +1,7 @@
 package decorator;
 
 /**
- * Class for adding Symbols. Replaces chars with Symbols.
+ * Symbols Class. Replaces chars with Symbols.
  * @author Erik Connerty
  */
 
