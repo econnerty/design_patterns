@@ -7,7 +7,7 @@ public class EasyPassword extends Password {
     private final int MAX_RANDOM_NUMBER = 100; //Added for Magic Number Avoidance
     
     /**
-     * Constructs an EaytPassword from a String
+     * Constructs an EasyPassword from a String
      * @param phrase
      */
     public EasyPassword(String phrase){
