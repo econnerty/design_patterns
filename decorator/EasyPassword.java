@@ -10,7 +10,7 @@ public class EasyPassword extends Password {
     
     /**
      * Constructs an EasyPassword from a String
-     * @param phrase
+     * @param A string to be made into a password
      */
     public EasyPassword(String phrase){
         super(phrase);

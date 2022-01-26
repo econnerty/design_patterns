@@ -8,11 +8,18 @@ public class SpecialChars extends PasswordDecorator{
     private static final int PERCENT_OF_TEN = 3;
     private static final int MAX_RANDOM_INT = 10;
 
-
+   /**
+     * Constructs a SpecialChars Decorator with the previous password
+     * @param The previous password
+     */
     public SpecialChars(Password passwordBeginning){
         super(passwordBeginning);
     }
     
+    /**
+     * Will insert a random special char 30% of the time for each char in the string
+     * @returns The modified string
+     */
     public String getPassword(){
         Random r = new Random();
         String out = "";
