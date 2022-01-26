@@ -2,6 +2,11 @@ package decorator;
 
 import java.util.Random;
 
+/**
+ * Class for EasyPassword. Adds random number from 1-99 to a password.
+ * @author Erik Connerty
+ */
+
 public class EasyPassword extends Password {
 
     //Inclusive Constants for random number generator

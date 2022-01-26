@@ -1,6 +1,9 @@
 package decorator;
 
-import java.util.Map;
+/**
+ * Class for adding Symbols. Replaces chars with Symbols.
+ * @author Erik Connerty
+ */
 
 public class Symbols extends PasswordDecorator{
     
