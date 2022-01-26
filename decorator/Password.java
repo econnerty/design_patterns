@@ -1,5 +1,9 @@
 package decorator;
 
+/**
+ * Password class
+ * @author Erik Connerty
+ */
 
 public abstract class Password {
     protected String password;
