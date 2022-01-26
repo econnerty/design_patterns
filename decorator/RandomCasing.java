@@ -17,7 +17,7 @@ public class RandomCasing extends PasswordDecorator{
     }
 
     /**
-     * There is a 50% the letter will be made uppercase or lowercase
+     * There is a 50% chance the letter will be made uppercase or lowercase
      * @returns The modified string
      */
     public String getPassword(){
