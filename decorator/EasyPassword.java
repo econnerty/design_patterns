@@ -11,7 +11,7 @@ public class EasyPassword extends Password {
 
     //Inclusive Constants for random number generator
     private static final int MAX_RANDOM_NUMBER = 99;
-    private static final int MIN_NUMBER = 1;
+    private static final int MIN_RANDOM_NUMBER = 1;
     
     /**
      * Constructs an EasyPassword from a String
@@ -29,7 +29,7 @@ public class EasyPassword extends Password {
         Random r = new Random();
         
         //Getting the number
-        int randomNumber = r.nextInt((MAX_RANDOM_NUMBER+1)-MIN_NUMBER)+MIN_NUMBER;
+        int randomNumber = r.nextInt((MAX_RANDOM_NUMBER+1)-MIN_RANDOM_NUMBER)+MIN_RANDOM_NUMBER;
 
         //This will concatenate a number from the range 1-99
         this.password = (this.password+randomNumber).replaceAll("\\s", "");
