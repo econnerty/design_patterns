@@ -31,7 +31,7 @@ public class EasyPassword extends Password {
         //Getting the number
         int randomNumber = r.nextInt((MAX_RANDOM_NUMBER+1)-MIN_RANDOM_NUMBER)+MIN_RANDOM_NUMBER;
 
-        //This will concatenate a number from the range 1-99
+        //This will concatenate a number from the range 1-99 and remove whitespace
         this.password = (this.password+randomNumber).replaceAll("\\s", "");
         return this.password;
     }
