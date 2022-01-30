@@ -13,7 +13,6 @@ public class Symbols extends PasswordDecorator{
      */
     public Symbols(Password passwordBeginning){
         super(passwordBeginning);
-        //this.password = passwordBeginning.password;
     }
 
     /**
@@ -22,7 +21,7 @@ public class Symbols extends PasswordDecorator{
      */
     public String getPassword(){
 
-        //This seems to be simpler
+        //This seems to be simpler. Since uppercase was not specified, I did not add it
         this.password = this.password.replace("a", "@");
         this.password = this.password.replace("b", "8");
         this.password = this.password.replace("e", "3");
@@ -32,45 +31,6 @@ public class Symbols extends PasswordDecorator{
         this.password = this.password.replace("s", "$");
         this.password = this.password.replace("t", "7");
 
-        /*String out = "";
-
-        for (char a : this.password.toCharArray()){
-
-            //Make sure the char is lowercase
-            a = Character.toLowerCase(a);
-
-            switch (a) {
-                case 'a':
-                    out += '@';
-                    break;
-                case 'b':
-                    out += '8';
-                    break;
-                case 'e':
-                    out += '3';
-                    break;
-                case 'g':
-                    out += '9';
-                    break;
-                case 'i':
-                    out += '!';
-                    break;
-                case 'o':
-                    out += '0';
-                    break;
-                case 's':
-                    out += '$';
-                    break;
-                case 't':
-                    out += '7';
-                    break;
-                default:
-                    out += a;
-                    break;
-            }
-        }*/
-
-        //this.password = out;
         return this.password;
     }
 

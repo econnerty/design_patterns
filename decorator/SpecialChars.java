@@ -19,7 +19,6 @@ public class SpecialChars extends PasswordDecorator{
      */
     public SpecialChars(Password passwordBeginning){
         super(passwordBeginning);
-        //this.password = passwordBeginning.password;
     }
     
     /**
