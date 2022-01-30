@@ -14,8 +14,9 @@ public abstract class PasswordDecorator extends Password {
      */
     public PasswordDecorator(Password passwordBeginning){
 
-        super(passwordBeginning.password);
+        //super(passwordBeginning.password);
         this.passwordBeginning = passwordBeginning;
+        this.password = passwordBeginning.password;
 
     }
 
@@ -23,7 +24,7 @@ public abstract class PasswordDecorator extends Password {
      * Returns the password
      * @return The password
      */
-    public String getPassword(){
+    public abstract String getPassword();/*{
         return this.password;
-    }
+    }*/
 }

@@ -13,6 +13,7 @@ public class Symbols extends PasswordDecorator{
      */
     public Symbols(Password passwordBeginning){
         super(passwordBeginning);
+        //this.password = passwordBeginning.password;
     }
 
     /**
@@ -20,7 +21,18 @@ public class Symbols extends PasswordDecorator{
      * @returns The modified string
      */
     public String getPassword(){
-        String out = "";
+
+        //This seems to be simpler
+        this.password = this.password.replace("a", "@");
+        this.password = this.password.replace("b", "8");
+        this.password = this.password.replace("e", "3");
+        this.password = this.password.replace("g", "9");
+        this.password = this.password.replace("i", "!");
+        this.password = this.password.replace("o", "0");
+        this.password = this.password.replace("s", "$");
+        this.password = this.password.replace("t", "7");
+
+        /*String out = "";
 
         for (char a : this.password.toCharArray()){
 
@@ -56,9 +68,9 @@ public class Symbols extends PasswordDecorator{
                     out += a;
                     break;
             }
-        }
+        }*/
 
-        this.password = out;
+        //this.password = out;
         return this.password;
     }
 

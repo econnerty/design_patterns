@@ -19,6 +19,7 @@ public class RandomCasing extends PasswordDecorator{
     public RandomCasing(Password passwordBeginning){
 
         super(passwordBeginning);
+        //this.password = passwordBeginning.password;
     }
 
     /**

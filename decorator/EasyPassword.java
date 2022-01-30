@@ -18,7 +18,7 @@ public class EasyPassword extends Password {
      * @param A string to be made into a password
      */
     public EasyPassword(String phrase){
-        super(phrase);
+        this.password = phrase;
     }
 
     /**

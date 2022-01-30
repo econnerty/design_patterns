@@ -12,15 +12,15 @@ public abstract class Password {
      * Constructs a password from a phrase
      * @param The password phrase to start with
      */
-    public Password(String phrase){
+    /*public Password(String phrase){
         this.password = phrase;
-    }
+    }*/
 
     /**
      * Returns the password
      * @return The password
      */
-    public String getPassword() {
+    public abstract String getPassword();/* {
         return this.password;
-    }
+    }*/
 }
