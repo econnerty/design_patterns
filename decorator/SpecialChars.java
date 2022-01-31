@@ -37,8 +37,9 @@ public class SpecialChars extends PasswordDecorator{
                 out += a;
                 out += specialChars[r.nextInt(specialChars.length)]; //Picking a random character out of our array
             }
-            else
+            else {
                 out += a;
+            }
         }
 
         this.password = out;

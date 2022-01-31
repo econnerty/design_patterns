@@ -30,10 +30,12 @@ public class RandomCasing extends PasswordDecorator{
         String out = "";
 
         for (char a : this.password.toCharArray()){
-            if (r.nextInt(MAX_RANDOM_INT) > 0)
+            if (r.nextInt(MAX_RANDOM_INT) > 0) {
                 out += Character.toUpperCase(a);
-            else
+            }
+            else {
                 out += Character.toLowerCase(a);
+            }
         }
         this.password = out;
         return this.password;
