@@ -19,11 +19,11 @@ public class SedanCar extends Car {
 
     protected void addAccessories() {
 
-        this.accessories.add(Accessories.FLOOR_MATS);
+        this.accessories.add(Accessories.FLOOR_MATTS);
         this.accessories.add(Accessories.PHONE_CHARGER);
         this.accessories.add(Accessories.BACK_UP_CAMERA);
         this.accessories.add(Accessories.EXTRA_CUP_HOLDERS);
         this.accessories.add(Accessories.HEATED_SEATS);
-        
+
     }
 }

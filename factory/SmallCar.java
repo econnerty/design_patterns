@@ -17,8 +17,8 @@ public class SmallCar extends Car {
 
     protected void addAccessories() {
 
-        this.accessories.add(Accessories.FLOOR_MATS);
+        this.accessories.add(Accessories.FLOOR_MATTS);
         this.accessories.add(Accessories.PHONE_CHARGER);
-        
+
     }
 }
