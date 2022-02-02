@@ -33,7 +33,7 @@ public class LuxuryCar extends Car {
         this.accessories.add(Accessories.WINDOW_TINT);
         this.accessories.add(Accessories.HIGH_END_SOUND);
         this.accessories.add(Accessories.TRUNK_ORGANIZER);
-        this.accessories.add(Accessories.BLUETOOTH);
+        this.accessories.add(Accessories.BLUE_TOOTH);
 
     }
 }
