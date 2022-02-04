@@ -11,10 +11,16 @@ public class SmallCar extends Car {
         super(make, model);
     }
     
+    /**
+     * Implements abstract function and adds a frame
+     */
     protected void addFrame() {
         System.out.println("Adding a small frame");
     }
 
+    /**
+     * Accessories for Small Car
+     */
     protected void addAccessories() {
 
         this.accessories.add(Accessories.FLOOR_MATTS);
