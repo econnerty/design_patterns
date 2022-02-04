@@ -21,25 +21,21 @@ public class CarFactory {
         System.out.println("Creating a " + make + " " +model);
 
         /**
-         * Switch on the car type. Return null if the type does not exist.
+         * Check for the car type. Return null if the type does not exist.
          */
-        switch (type) {
-
-            case "small":
-                car = new SmallCar(make, model);
-                break;
-
-            case "sedan":
-                car = new SedanCar(make, model);
-                break;
-
-            case "luxury":
-                car = new LuxuryCar(make, model);
-                break;
-
-            default:
-                return null;
+        if(type.equalsIgnoreCase(CarType.SMALL.toString())) {
+            car = new SmallCar(make, model);
         }
+        else if(type.equalsIgnoreCase(CarType.SEDAN.toString())) {
+            car = new SedanCar(make, model);
+        }
+        else if(type.equalsIgnoreCase(CarType.LUXURY.toString())) {
+            car = new LuxuryCar(make, model);
+        }
+        else {
+            return null;
+        }
+
         
         car.assemble();
         return car;

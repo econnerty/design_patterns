@@ -13,11 +13,19 @@ public abstract class Car {
     private String model;
     protected ArrayList<Accessories> accessories = new ArrayList<Accessories>();
 
+    /**
+     * Constructor for a car
+     * @param The car's make
+     * @param The car's model
+     */
     public Car(String make, String model) {
         this.make = make;
         this.model = model;
     }
 
+    /**
+     * Calls the respective functions to assemble the car.
+     */
     public void assemble() {
         addFrame();
         addWheels();
@@ -27,6 +35,7 @@ public abstract class Car {
         displayAccessories();
     }
 
+    
     protected abstract void addFrame();
 
     protected void addWheels() {
