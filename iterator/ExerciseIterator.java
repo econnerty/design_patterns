@@ -1,20 +1,27 @@
 package iterator;
 
-public class ExerciseIterator {
+import java.util.Iterator;
+
+public class ExerciseIterator implements Iterator {
 
     private Exercise[] exercises;
     private int position;
 
+    //https://stackoverflow.com/questions/25433379/default-iterator-implementation-for-array-of-object-t
     public ExerciseIterator(Exercise[] exercises){
-
+        this.exercises = exercises;
     }
 
     public boolean hasNext(){
-        return true;
+        return ((position < exercises.length) && (exercises[position] != null));
     }
 
     public Exercise next(){
-        return new Exercise("");
+        if (hasNext()){
+            return exercises[position++];
+        }
+        return null;
+
     }
     
 }
