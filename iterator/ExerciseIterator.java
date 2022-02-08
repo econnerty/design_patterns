@@ -7,7 +7,7 @@ public class ExerciseIterator implements Iterator {
     private Exercise[] exercises;
     private int position;
 
-    //https://stackoverflow.com/questions/25433379/default-iterator-implementation-for-array-of-object-t
+    //Referenced from https://github.com/portiaportia/DesignPatterns/blob/master/src/csce247/iterator/DinerMenuIterator.java
     public ExerciseIterator(Exercise[] exercises){
         this.exercises = exercises;
     }
