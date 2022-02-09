@@ -3,20 +3,22 @@ package iterator;
 import java.util.ArrayList;
 
 /**
- * Exercise Class
+ * PT Class
  * @author Erik Connerty
  */
 public class PT {
 
+    private static final int ARRAY_SIZE = 2;
 
     private String firstName;
     private String lastName;
     private String bio;
-    private Exercise[] exercises = new Exercise[2];
+    private Exercise[] exercises = new Exercise[ARRAY_SIZE];
 
     
     
     /** 
+     * Doubles the arrays length and puts the old data into the new one
      * @param exercises
      * @return Exercise[]
      */
@@ -41,6 +43,7 @@ public class PT {
 
     
     /** 
+     * Adds an Exercise with the parameters
      * @param title
      * @param muscleGroups
      * @param directions
@@ -71,6 +74,7 @@ public class PT {
 
     
     /** 
+     * Get the first name
      * @return String
      */
     public String getFirstName(){
@@ -79,6 +83,7 @@ public class PT {
 
     
     /** 
+     * Gets the last name
      * @return String
      */
     public String getLastName(){
@@ -87,6 +92,7 @@ public class PT {
 
     
     /** 
+     * Gets the bio
      * @return String
      */
     public String getBio(){
@@ -95,6 +101,7 @@ public class PT {
 
     
     /** 
+     * Returns an iterator for Exercises
      * @return ExerciseIterator
      */
     public ExerciseIterator createIterator(){
@@ -103,6 +110,7 @@ public class PT {
 
     
     /** 
+     * Returns a string of the PT info
      * @return String
      */
     public String toString(){
