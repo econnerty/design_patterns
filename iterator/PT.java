@@ -23,9 +23,9 @@ public class PT {
     
     /** 
      * Adds an Exercise with the parameters
-     * @param title
-     * @param muscleGroups
-     * @param directions
+     * @param The title
+     * @param The muscleGroups
+     * @param The directions
      */
     public void addExercise(String title, ArrayList<String> muscleGroups, ArrayList<String> directions){
 
