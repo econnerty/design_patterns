@@ -15,32 +15,11 @@ public class PT {
     private String bio;
     private Exercise[] exercises = new Exercise[ARRAY_SIZE];
 
-    
-    
-    /** 
-     * Doubles the arrays length and puts the old data into the new one
-     * @param exercises
-     * @return Exercise[]
-     */
-    private Exercise[] growArray(Exercise[] exercises){
-        
-        int size = exercises.length*2;
-
-        Exercise[] newExercises = new Exercise[size];
-
-        System.arraycopy(exercises, 0, newExercises, 0, this.exercises.length);
-        return newExercises;
-
-
-    }
-
-
     public PT(String firstName, String lastName, String bio){
         this.firstName = firstName;
         this.lastName = lastName;
         this.bio = bio;
     }
-
     
     /** 
      * Adds an Exercise with the parameters
@@ -72,7 +51,6 @@ public class PT {
 
     }
 
-    
     /** 
      * Get the first name
      * @return String
@@ -80,7 +58,6 @@ public class PT {
     public String getFirstName(){
         return firstName;
     }
-
     
     /** 
      * Gets the last name
@@ -89,7 +66,6 @@ public class PT {
     public String getLastName(){
         return lastName;
     }
-
     
     /** 
      * Gets the bio
@@ -99,7 +75,6 @@ public class PT {
         return bio;
     }
 
-    
     /** 
      * Returns an iterator for Exercises
      * @return ExerciseIterator
@@ -108,13 +83,29 @@ public class PT {
         return new ExerciseIterator(this.exercises);
     }
 
-    
     /** 
      * Returns a string of the PT info
      * @return String
      */
     public String toString(){
         return (firstName + " " + lastName + "\n" + bio+ "\n");
+    }
+  
+    /** 
+     * Doubles the arrays length and puts the old data into the new one
+     * @param exercises
+     * @return Exercise[]
+     */
+    private Exercise[] growArray(Exercise[] exercises){
+        
+        int size = exercises.length*2;
+
+        Exercise[] newExercises = new Exercise[size];
+
+        System.arraycopy(exercises, 0, newExercises, 0, this.exercises.length);
+        return newExercises;
+
+
     }
 
     
