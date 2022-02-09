@@ -2,6 +2,10 @@ package iterator;
 
 import java.util.ArrayList;
 
+/**
+ * Exercise Class
+ * @author Erik Connerty
+ */
 public class Exercise {
     
     private String title;
@@ -22,14 +26,29 @@ public class Exercise {
         
     }
 
+    
+    /** 
+     * Adds a target muscle
+     * @param The muscle
+     */
     public void addTargetMuscle(String muscle){
         targetMuscles.add(muscle);
     }
 
+    
+    /** 
+     * Removes a target muscle
+     * @param muscle
+     */
     public void removeTargetMuscle(String muscle){
         targetMuscles.remove(muscle);
     }
 
+    
+    /** 
+     * Returns a string
+     * @return The string
+     */
     public String toString(){
         String out = "\n... "+ title + " ...";
 

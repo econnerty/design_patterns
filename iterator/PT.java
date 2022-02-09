@@ -2,6 +2,10 @@ package iterator;
 
 import java.util.ArrayList;
 
+/**
+ * Exercise Class
+ * @author Erik Connerty
+ */
 public class PT {
 
 
@@ -11,6 +15,11 @@ public class PT {
     private Exercise[] exercises = new Exercise[2];
 
     
+    
+    /** 
+     * @param exercises
+     * @return Exercise[]
+     */
     private Exercise[] growArray(Exercise[] exercises){
         
         int size = exercises.length*2;
@@ -30,6 +39,12 @@ public class PT {
         this.bio = bio;
     }
 
+    
+    /** 
+     * @param title
+     * @param muscleGroups
+     * @param directions
+     */
     public void addExercise(String title, ArrayList<String> muscleGroups, ArrayList<String> directions){
 
         Exercise newExercise = new Exercise(title, muscleGroups, directions);
@@ -54,22 +69,42 @@ public class PT {
 
     }
 
+    
+    /** 
+     * @return String
+     */
     public String getFirstName(){
         return firstName;
     }
 
+    
+    /** 
+     * @return String
+     */
     public String getLastName(){
         return lastName;
     }
 
+    
+    /** 
+     * @return String
+     */
     public String getBio(){
         return bio;
     }
 
+    
+    /** 
+     * @return ExerciseIterator
+     */
     public ExerciseIterator createIterator(){
         return new ExerciseIterator(this.exercises);
     }
 
+    
+    /** 
+     * @return String
+     */
     public String toString(){
         return (firstName + " " + lastName + "\n" + bio+ "\n");
     }
