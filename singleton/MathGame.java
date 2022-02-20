@@ -12,15 +12,16 @@ public class MathGame {
     
     private static MathGame mathGame;
     private int score;
-    private Random rand = new Random();
-    private Scanner reader = new Scanner(System.in);
-    private String[] operands = {"+","-","*","/"};
+    private Random rand;
+    private Scanner reader;
+    private static final String[] operands = {"+","-","*","/"};
 
     /**
      * Private constructor to ensure singleton design pattern
      */
     private MathGame(){
-
+        this.rand = new Random();
+        this.reader = new Scanner(System.in);
     }
 
     /**
@@ -39,24 +40,29 @@ public class MathGame {
     }
 
     /**
-    * Runs the game and calls play recursively. Is recursion the best way to do this? Probably will cause issues if the game is played too many times.
+    * Runs the game in a while loop.
     */
     public void play(){
-        System.out.println("(P)lay or (Q)uit:");
-        String input = reader.nextLine();
-        if (input.equalsIgnoreCase("P")){
-            if (playRound()){
-                score++;
-                System.out.println("You got it!");
+
+        while (true) {
+
+            System.out.println("(P)lay or (Q)uit:");
+            String input = reader.nextLine();
+            if (input.equalsIgnoreCase("P")){
+                if (playRound()){
+                    score++;
+                    System.out.println("You got it!");
+                }
+                
             }
-            play();
-        }
-        else if (input.equalsIgnoreCase("q")) {
-            System.out.println("You won " + score + " games!\nGoodbye");
-        }
-        else {
-            System.out.println("Sorry, you must enter p or q");
-            play();
+            else if (input.equalsIgnoreCase("q")) {
+                System.out.println("You won " + score + " games!\nGoodbye");
+                break;
+            }
+            else {
+                System.out.println("Sorry, you must enter p or q");
+                
+            }
         }
 
     }
