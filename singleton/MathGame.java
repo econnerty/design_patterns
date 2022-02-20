@@ -67,6 +67,10 @@ public class MathGame {
 
     }
 
+    /**
+     * Plays a round of the game and returns true if the answer is right.
+     * @return boolean
+     */
     public boolean playRound(){
 
         int firstNumber = rand.nextInt(100)+1;
