@@ -3,16 +3,27 @@ package state;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+/**
+ * @author Erik Connerty
+ * SpanishState Interface
+ * Implements a spanish state with song lyrics in spanish
+ */
 public class SpanishState implements State {
 
+    //Songa Names
     private static final String twinkleName = "Estrellita, ¿dónde estás?";
     private static final String happyName = "Si usted esta feliz";
 
+    //Lyrics for the two songs
     private static final ArrayList twinkleLyrics = new ArrayList<String>(Arrays.asList("Estrellita, ¿dónde estás?", "Quiero verte cintilar", "En el cielo, sobre el mar.", "Un diamante de verdad.","Estrellita, ¿dónde estás?", "Quiero verte cintilar."));
     private static final ArrayList happyLyrics = new ArrayList<String>(Arrays.asList("Si usted esta feliz Apaluda las fuerte.", "Si usted esta feliz Apaluda las fuerte", "Si usted esta feliz, En su cara se vera. ", "Si usted esta feliz Apaluda las fuerte."));  
 
     private MusicBox box;
 
+    /**
+     * Constructor for SpanishState
+     * @param A MusicBox instance
+     */
     public SpanishState(MusicBox box){
         this.box = box;
     }
