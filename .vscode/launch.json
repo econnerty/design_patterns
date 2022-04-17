@@ -1,0 +1,63 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch LanguageSongs",
+            "request": "launch",
+            "mainClass": "state.LanguageSongs",
+            "projectName": "design_patterns_fe8fdf6e"
+        },
+        {
+            "type": "java",
+            "name": "Launch MathDriver",
+            "request": "launch",
+            "mainClass": "singleton.MathDriver",
+            "projectName": "design_patterns_fe8fdf6e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch PasswordProgram",
+            "request": "launch",
+            "mainClass": "decorator.PasswordProgram",
+            "projectName": "design_patterns_fe8fdf6e"
+        },
+        {
+            "type": "java",
+            "name": "Launch CarStore",
+            "request": "launch",
+            "mainClass": "factory.CarStore",
+            "projectName": "design_patterns_fe8fdf6e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Gym",
+            "request": "launch",
+            "mainClass": "iterator.Gym",
+            "projectName": "design_patterns_fe8fdf6e"
+        },
+        {
+            "type": "java",
+            "name": "Launch SchoolDriver",
+            "request": "launch",
+            "mainClass": "observer.SchoolDriver",
+            "projectName": "design_patterns_fe8fdf6e"
+        },
+        {
+            "type": "java",
+            "name": "Launch ListDriver",
+            "request": "launch",
+            "mainClass": "strategy.ListDriver",
+            "projectName": "design_patterns_fe8fdf6e"
+        }
+    ]
+}

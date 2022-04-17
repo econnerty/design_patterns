@@ -7,6 +7,7 @@ import java.util.ArrayList;
  */
 
 public class Listing {
+    
     private String title;
     private ArrayList<String> items = new ArrayList<String>();
     private SortBehavior sortBehavior = new BubbleSort(); 
