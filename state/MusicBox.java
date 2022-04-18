@@ -31,7 +31,6 @@ public class MusicBox {
 
     /**
      * Presses the star button for the current state IE plays Twinkle Twinkle Little Star
-     * @throws InterruptedException
      */
     public void pressStarButton() {
         state.pressStarButton();
@@ -39,7 +38,6 @@ public class MusicBox {
 
     /**
      * Presses the Happy button for the current state IE plays If you're happy and you know it.
-     * @throws InterruptedException
      */
     public void pressHappyButton(){
         state.pressHappyButton();
