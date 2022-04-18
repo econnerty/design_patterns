@@ -33,7 +33,7 @@ public class MusicBox {
      * Presses the star button for the current state IE plays Twinkle Twinkle Little Star
      * @throws InterruptedException
      */
-    public void pressStarButton() throws InterruptedException{
+    public void pressStarButton() {
         state.pressStarButton();
     }
 
@@ -41,7 +41,7 @@ public class MusicBox {
      * Presses the Happy button for the current state IE plays If you're happy and you know it.
      * @throws InterruptedException
      */
-    public void pressHappyButton() throws InterruptedException{
+    public void pressHappyButton(){
         state.pressHappyButton();
     }
 
@@ -72,7 +72,7 @@ public class MusicBox {
         this.state = state;
     }
 
-    //Accesors
+    //Accessors
     public State getEnglishState() {
         return this.englishState;
     }
@@ -89,15 +89,19 @@ public class MusicBox {
      * Plays the song back line by line with a 1.5 second delay between each line. Displays song name first
      * @param songName
      * @param lyrics
-     * @throws InterruptedException
      */
-    public void playSong(String songName, ArrayList<String> lyrics) throws InterruptedException{
+    public void playSong(String songName, ArrayList<String> lyrics){
 
         System.out.println("\nPlaying: " + songName);
 
         for(String temp : lyrics) {
             System.out.println(temp);
-            Thread.sleep(1500);
+            try {
+                Thread.sleep(1500);
+            } catch (InterruptedException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
         }
         System.out.println();
         

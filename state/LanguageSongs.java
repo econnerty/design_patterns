@@ -8,7 +8,7 @@ public class LanguageSongs {
         reader = new Scanner(System.in);
     }
 
-    public void run() throws InterruptedException {
+    public void run() {
         MusicBox box = new MusicBox();
         
         while(true){
@@ -35,7 +35,7 @@ public class LanguageSongs {
         System.out.println("Goodbye");
     }
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         LanguageSongs driver = new LanguageSongs();
         driver.run();
     }

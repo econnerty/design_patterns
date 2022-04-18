@@ -9,15 +9,15 @@ public interface State {
 
     /**
      * Tells the music box to play twinkle twinkle little star in the given language
-     * @throws InterruptedException
+     * 
      */
-    public void pressStarButton() throws InterruptedException;
+    public void pressStarButton();
 
     /**
      * Tells the music box to play If you're happy and you know it in the given language
-     * @throws InterruptedException
+     * 
      */
-    public void pressHappyButton() throws InterruptedException;
+    public void pressHappyButton();
 
     /**
      * Changes the state to English if it isn't already in it

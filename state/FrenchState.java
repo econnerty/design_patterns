@@ -28,10 +28,10 @@ public class FrenchState implements State {
         this.box = box;
     }
 
-    public void pressStarButton() throws InterruptedException {
+    public void pressStarButton() {
         box.playSong(twinkleName, twinkleLyrics);
     }
-    public void pressHappyButton() throws InterruptedException {
+    public void pressHappyButton() {
         box.playSong(happyName, happyLyrics);
     }
     public void pressEnglishButton(){
