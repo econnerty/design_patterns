@@ -12,6 +12,14 @@ public class Track extends Song{
     private String lastName;
     private Genre genre;
 
+    /**
+     * Constructor for track
+     * @param title
+     * @param album
+     * @param firstName
+     * @param lastName
+     * @param genre
+     */
     public Track(String title, String album, String firstName, String lastName, Genre genre) {
         this.title = title;
         this.album = album;
@@ -32,6 +40,10 @@ public class Track extends Song{
     public String getArtistLastName(){
         return this.lastName;
     }
+
+    /**
+     * Converts Enum to readable genre
+     */
     public String getGenre(){
         switch (this.genre) {
             case ROCK:
@@ -44,8 +56,6 @@ public class Track extends Song{
                 return "Jazz";
             case COUNTRY:
                 return "Country";
-            case OTHER:
-                return "Other";
             default:
                 return "Other";
         }

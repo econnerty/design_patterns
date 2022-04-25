@@ -25,6 +25,10 @@ public class JukeBox {
         songs.put(song.getTitle().toLowerCase(), song);
     }
 
+    /**
+     * Check if the song exists then plays it
+     * @param The song name
+     */
     public void play(String songName) {
         Song song = songs.get(songName.toLowerCase());
 
