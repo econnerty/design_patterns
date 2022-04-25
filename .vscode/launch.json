@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MusicProgram",
+            "request": "launch",
+            "mainClass": "adapter.MusicProgram",
+            "projectName": "design_patterns_fe8fdf6e"
+        },
+        {
+            "type": "java",
             "name": "Launch LanguageSongs",
             "request": "launch",
             "mainClass": "state.LanguageSongs",
